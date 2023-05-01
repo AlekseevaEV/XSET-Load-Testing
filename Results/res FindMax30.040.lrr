@@ -1,0 +1,51 @@
+[Scenario]
+Product=LoadRunner Controller
+Version=2021.0.0.0
+Path=C:\Users\AEV\Desktop\XSET\scenario\ScenarioMax.lrs
+Subject=Scenario1
+Result_file=C:\Users\AEV\Desktop\XSET\Results\res FindMax30.040\res FindMax30.040.lrr
+Description=
+ResultName=res FindMax30.040
+Time_Zone=-10800
+Start_time=1682806217
+Daylight_Bias=0
+Stop_time=1682814249
+
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+
+[Running_mode]
+Start_reason=By command
+Stop_reason=By a user
+
+[Data Collection]
+FullData=1
+SummaryEnded=1
+
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Schedule 1
+Mode=Scenario Scheduling
+Scenario Duration=Start 10 Vusers: 1 every 00:00:15 (HH:MM:SS); Run for 00:22:00 (HH:MM:SS); Start 10 Vusers: 1 every 00:00:15 (HH:MM:SS); Run for 00:22:00 (HH:MM:SS); Start 10 Vusers: 1 every 00:00:15 (HH:MM:SS); Run for 00:22:00 (HH:MM:SS); Start 10 Vusers: 1 every 00:00:15 (HH:MM:SS); Run for 00:22:00 (HH:MM:SS); Start 10 Vusers: 1 every 00:00:15 (HH:MM:SS); Run for 00:22:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:15 (HH:MM:SS)
+Load Behavior=Initialize each Vuser just before it runs
+Global Schedule=ST10_1E15;R1320;ST10_1E15;R1320;ST10_1E15;R1320;ST10_1E15;R1320;ST10_1E15;R1320;SP50_1E15;
+
+[Scripts]
+uc3_buytickets=C:\Users\AEV\Desktop\XSET\Scripts\UC3_BuyTickets\UC3_BuyTickets.usr
+UC6_Registration=C:\Users\AEV\Desktop\XSET\Scripts\UC6_Registration\UC6_Registration.usr
+uc2_searchticketwithoutpay=C:\Users\AEV\Desktop\XSET\Scripts\UC2_SearchTicketWithoutPay\UC2_SearchTicketWithoutPay.usr
+uc4_viewineitrary=C:\Users\AEV\Desktop\XSET\Scripts\UC4_ViewIneitrary\UC4_ViewIneitrary.usr
+uc5_deleteticket=C:\Users\AEV\Desktop\XSET\Scripts\UC5_DeleteTicket\UC5_DeleteTicket.usr
+uc1_login_logout=C:\Users\AEV\Desktop\XSET\Scripts\UC1_LogIn_LogOut\UC1_LogIn_LogOut.usr
+
+[Scripts_types]
+uc3_buytickets=Multi+QTWeb
+UC6_Registration=Multi+QTWeb
+uc2_searchticketwithoutpay=Multi+QTWeb
+uc4_viewineitrary=Multi+QTWeb
+uc5_deleteticket=Multi+QTWeb
+uc1_login_logout=Multi+QTWeb
+
